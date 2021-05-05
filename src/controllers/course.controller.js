@@ -7,7 +7,7 @@ const create = (req, res) => {
         if(err){
             return res.status(400).json(err.message);
         }
-        res.status(200).json(data);
+        res.status(201).json(data);
     })
 }
 
@@ -40,7 +40,7 @@ const update = (req, res) => {
             if(err){
                 return res.status(400).json(err.message)
             }
-            res.status(200).json(data);
+            res.status(400).json(data);
         })
     })
 }
