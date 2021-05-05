@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const CourseSchema = new mongoose.Schema({ 
-    ame: String,
+    name: String,
     points: Number
 });
 
